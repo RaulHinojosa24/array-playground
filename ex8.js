@@ -2,7 +2,8 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
 
 function cortaPorAqui(corteIzq, corteDer, array) {
-    return array.slice(array.indexOf(corteIzq), array.indexOf(corteDer) + 1);
+    // return array.slice(array.indexOf(corteIzq), array.indexOf(corteDer) + 1);
+    return array.slice(array.findIndex(x => x == corteIzq), array.findIndex(x => x == corteDer) + 1);
 }
 
 /**
