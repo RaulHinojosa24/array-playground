@@ -2,7 +2,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
 
 function cortaPorAqui(corteIzq, corteDer, array) {
-    return;
+    return array.slice(array.indexOf(corteIzq), array.indexOf(corteDer) + 1);
 }
 
 /**
@@ -13,6 +13,3 @@ let animales = ["Elefante", "Tigre", "Leopardo", "Ñu", "Pantera"];
 
 console.log(cortaPorAqui("Elefante", "Leopardo", animales)); // ["Elefante", "Tigre", "Leopardo"]
 console.log(cortaPorAqui("Tigre", "Ñu", animales)); // ["Tigre", "Leopardo", "Ñu"]
-
-//
-
